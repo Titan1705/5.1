@@ -9,7 +9,7 @@ get_vacancy_list = get_vacancies(id_employees_list, vacancies_API)
 
 #  Вводим свои локальные параметры базы данных Postgres SQL.
 try:
-    params = dict(host='localhost', database='course_work_5', port=5432, user='postgres', password='1234', )
+    params = dict(host='localhost', database='course_work_5', port=5432, user='postgres', password='1234')
     with psycopg2.connect(**params) as connection:
         with connection.cursor() as cursor:
 
